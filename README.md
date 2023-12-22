@@ -55,7 +55,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 Here is a screenshot of my portfolio with a live webpage link for you to check out!
 
-[![My Portfolio](src/assets/images/Porfolio.png)](https://martin-dev-portolio.netlify.app/)
+[![My Portfolio](public/images/Porfolio.png)](https://martin-dev-portolio.netlify.app/)
 
 ## Usage
 
