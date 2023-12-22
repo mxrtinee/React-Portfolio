@@ -2,7 +2,7 @@
   "portfolio": [
   {
     "id": "1",
-    "src": "assets/images/MovieNest.png",
+    "src": "images/MovieNest.png",
     "title": "MovieNest",
     "description": "The Movie Search App is a user-friendly web application that allows movie enthusiasts to search for movies, view their details, and save their favorite movies. It provides an easy way to discover new movies and keep track of movie preferences.",
     "githubLink": "https://github.com/lundj227/movie-nest",
@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "src": "assets/images/Fast-Lane-Rental.png",
+    "src": "./images/Fast-Lane-Rental.png",
     "title": "Fast Lane Rentals",
     "description": "Fast Lane Rentals is a car rental app that makes it simpler for you to pick a car, rent it and pay for it. All you need to rent a car, is to be of leagal driving age and obviously have a driver's license...for insurance purposes. This is car rental app meant to make your life a tad bit easier.",
     "githubLink": "https://github.com/mxrtinee/Fast-Lane-Rentals",
@@ -18,7 +18,7 @@
   },
   {
     "id": "3",
-    "src": "assets/images/placeholder-image-2.jpg",
+    "src": "../images/placeholder-image-2.jpg",
     "title": "Project 3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
     "githubLink": "https://github.com/",
@@ -26,7 +26,7 @@
   },
   {
     "id": "4",
-    "src": "assets/images/placeholder-image-2.jpg",
+    "src": "../../images/placeholder-image-2.jpg",
     "title": "Project 4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
     "githubLink": "https://github.com/",
