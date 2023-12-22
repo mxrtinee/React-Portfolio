@@ -5,7 +5,7 @@ export default function About() {
       <img
         id="profile-image"
         className="profile-image"
-        src="./src/assets/images/martin.jpg"
+        src="./public/images/martin.jpg"
         alt="Martin Estrada"
       />
       <p id="intro-text" className="intro-text">
