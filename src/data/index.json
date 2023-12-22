@@ -1,0 +1,52 @@
+{
+  "portfolio": [
+  {
+    "id": "1",
+    "src": "./src/assets/images/MovieNest.png",
+    "title": "MovieNest",
+    "description": "The Movie Search App is a user-friendly web application that allows movie enthusiasts to search for movies, view their details, and save their favorite movies. It provides an easy way to discover new movies and keep track of movie preferences.",
+    "githubLink": "https://github.com/lundj227/movie-nest",
+    "liveLink": "https://lundj227.github.io/movie-nest/"
+  },
+  {
+    "id": "2",
+    "src": "./src/assets/images/Fast-Lane-Rental.png",
+    "title": "Fast Lane Rentals",
+    "description": "Fast Lane Rentals is a car rental app that makes it simpler for you to pick a car, rent it and pay for it. All you need to rent a car, is to be of leagal driving age and obviously have a driver's license...for insurance purposes. This is car rental app meant to make your life a tad bit easier.",
+    "githubLink": "https://github.com/mxrtinee/Fast-Lane-Rentals",
+    "liveLink": "https://ancient-retreat-96165-046e407ce051.herokuapp.com/"
+  },
+  {
+    "id": "3",
+    "src": "./src/assets/images/placeholder-image-2.jpg",
+    "title": "Project 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "githubLink": "https://github.com/",
+    "liveLink": "https://google.com/"
+  },
+  {
+    "id": "4",
+    "src": "./src/assets/images/placeholder-image-2.jpg",
+    "title": "Project 4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "githubLink": "https://github.com/",
+    "liveLink": "https://google.com/"
+  },
+  {
+    "id": "5",
+    "src": "./src/assets/images/placeholder-image-2.jpg",
+    "title": "Project 5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "githubLink": "https://github.com/",
+    "liveLink": "https://google.com/"
+  },
+  {
+    "id": "6",
+    "src": "./src/assets/images/placeholder-image-2.jpg",
+    "title": "Project 6",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+    "githubLink": "https://github.com/",
+    "liveLink": "https://google.com/"
+  }
+]
+}
