@@ -16,12 +16,12 @@ function Header() {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-                Projects
+                About Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/About" className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
-                About Me
+              <Link to="/Projects" className={currentPage === '/Projects' ? 'nav-link active' : 'nav-link'}>
+                Projects
               </Link>
             </li>
             <li className="nav-item">

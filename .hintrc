@@ -8,7 +8,10 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
-          "font-synthesis"
+          "font-synthesis",
+          "text-align: -webkit-match-parent",
+          "-webkit-tap-highlight-color",
+          "text-decoration-skip-ink"
         ]
       }
     ],
