@@ -1,15 +1,22 @@
+// Importing data from the index.json file located in the data folder
 import data from "../data/index.json";
 
+// Functional component representing the Home page with a portfolio section
 export default function Home() {
   return (
+    // Portfolio section containing recent projects
     <section className="portfolio--section" id="MyPortfolio">
+      {/* Container for the portfolio section */}
       <div className="portfolio--container-box">
+        {/* Header for the portfolio section */}
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
         </div>
+        {/* GitHub button for linking to the GitHub profile */}
         <div>
           <button className="btn btn-github">
+            {/* GitHub icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -17,6 +24,7 @@ export default function Home() {
               viewBox="0 0 33 33"
               fill="none"
             >
+              {/* GitHub icon path */}
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -24,60 +32,73 @@ export default function Home() {
                 fill="currentColor"
               />
             </svg>
+            {/* GitHub link */}
             <a href="https://github.com/mxrtinee" className="no-underline">Visit My Github</a>
           </button>
         </div>
       </div>
+      {/* Container for displaying project cards */}
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
+          // Individual project card
           <div key={index} className="portfolio--section--card">
+            {/* Project image */}
             <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
+              <img src={item.src} alt={`Project: ${item.title}`} />
             </div>
+            {/* Project card content */}
             <div className="portfolio--section--card--content">
               <div>
+                {/* Project title */}
                 <h3 className="portfolio--section--title">{item.title}</h3>
+                {/* Project description */}
                 <p className="text-md">{item.description}</p>
               </div>
+              {/* GitHub repository link */}
               <p className="text-sm portfolio--link">
-              <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
-                    GitHub Repo
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 20 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                        stroke="currentColor"
-                        strokeWidth="2.66667"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </p>
-                <p className="text-sm portfolio--link">
-                  <a href={item.liveLink} target="_blank" rel="noopener noreferrer">
-                    Live Page
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 20 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                        stroke="currentColor"
-                        strokeWidth="2.66667"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
+                <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                  GitHub Repo
+                  {/* GitHub icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    {/* GitHub icon path */}
+                    <path
+                      d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                      stroke="currentColor"
+                      strokeWidth="2.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </p>
+              {/* Live page link */}
+              <p className="text-sm portfolio--link">
+                <a href={item.liveLink} target="_blank" rel="noopener noreferrer">
+                  Live Page
+                  {/* External link icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    {/* External link icon path */}
+                    <path
+                      d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                      stroke="currentColor"
+                      strokeWidth="2.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
               </p>
             </div>
           </div>
