@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 export default function Contact() {
+  // State for form data and errors
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +13,7 @@ export default function Contact() {
     email: '',
   });
 
+  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -26,6 +28,7 @@ export default function Contact() {
     });
   };
 
+  // Handle blur event to check for required fields
   const handleBlur = (e) => {
     const { name, value } = e.target;
     if (!value.trim()) {
@@ -36,12 +39,14 @@ export default function Contact() {
     }
   };
 
+  // Validate email format on blur
   const validateEmail = (email) => {
     // Basic email validation, adjust as needed
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
+  // Handle email input blur to check for a valid email
   const handleEmailBlur = () => {
     const { email } = formData;
     if (email && !validateEmail(email)) {
@@ -52,6 +57,7 @@ export default function Contact() {
     }
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -79,10 +85,12 @@ export default function Contact() {
     }
   };
 
+  // JSX for the Contact component
   return (
     <div className="contact-container">
       <h1>Contact Page</h1>
       <form onSubmit={handleSubmit}>
+        {/* Name Input */}
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Your Name:
@@ -99,6 +107,8 @@ export default function Contact() {
           />
           {formErrors.name && <span className="error">{formErrors.name}</span>}
         </div>
+
+        {/* Email Input */}
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Your Email:
@@ -115,6 +125,8 @@ export default function Contact() {
           />
           {formErrors.email && <span className="error">{formErrors.email}</span>}
         </div>
+
+        {/* Message Textarea */}
         <div className="mb-3">
           <label htmlFor="message" className="form-label">
             Message:
@@ -131,6 +143,8 @@ export default function Contact() {
           ></textarea>
           {formErrors.message && <span className="error">{formErrors.message}</span>}
         </div>
+
+        {/* Submit Button */}
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
