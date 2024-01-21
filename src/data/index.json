@@ -18,11 +18,11 @@
   },
   {
     "id": "3",
-    "src": "/images/placeholder-image-2.jpg",
-    "title": "Project 3",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-    "githubLink": "https://github.com/",
-    "liveLink": "https://google.com/"
+    "src": "/images/SpendSmart.png",
+    "title": "SpendSmart",
+    "description": "Expense Tracker is a MERN stack single-page application designed to assist users in managing their finances effectively. It allows users to track their daily, weekly, monthly, and yearly expenses, integrating a user-friendly interface and real-time data processing. The application is built with React for the front end, GraphQL with a Node.js and Express.js server, and MongoDB along with Mongoose ODM for the database.",
+    "githubLink": "https://github.com/CrisCo116/expense-tracker",
+    "liveLink": "https://spendsmart-yq4j.onrender.com/"
   },
   {
     "id": "4",
